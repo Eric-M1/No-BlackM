@@ -36,7 +36,7 @@ if os.path.exists('dataFile.txt'):
         dataV = input(f'{CYAN}{BOLD}[~] {LI_G}Выберите метод: {RESET}')
         if dataV == '1':
             os.remove('dataFile.txt')
-            os.system('clear') 
+            os.system('clear')  
             print(f'{YELLOW}{BOLD}[+] {LI_G}Данные будут:{RESET} Перезаписаны')
             sleep(1)
         elif dataV == '2':
