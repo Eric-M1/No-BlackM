@@ -63,7 +63,7 @@ def getNumber():
                 versioUR = requests.get('https://github.com/DataSC3/No-BlackM/commits/master')
                 versioURL = bs(versioUR.text, 'html.parser')
                 get_version = versioURL.find_all('div', class_='commit-desc')
-                os.system('clear')
+                os.system("clear")
                 with open('.banner_840', 'r') as fileF:
                     try:
                         versionUP = fileF.read().split(':')[1]
